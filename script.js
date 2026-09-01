@@ -29,7 +29,7 @@ const listaHabilidades = [
 const listaDatosCuriosos = [
   {
     titulo: "Videojuegos",
-    descripcion: "Juego principalmente Overwatch 2, Fortnite y Minecraft.",
+    descripcion: "Juego principalmente Overwatch 2, Valorant y burnout.",
   },
   {
     titulo: "Fútbol",
