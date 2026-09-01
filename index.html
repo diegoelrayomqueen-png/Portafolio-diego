@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diego Andrés Pérez de la Hoz | Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ 
+  <header class="encabezado-principal">
+    <nav class="barra-navegacion">
+      <span class="logo-nombre">Diego Pérez</span>
+      <ul class="lista-enlaces-nav">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#datos-curiosos">Datos curiosos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    
+   
+    <section id="inicio" class="seccion-inicio">
+      <div class="contenido-inicio">
+        <h1>Diego Andrés Pérez de la Hoz</h1>
+        <p class="frase-presentacion">
+          Estudiante de la Universidad Simón Bolívar apasionado por la tecnología,
+          las redes y el análisis de datos.
+        </p>
+        <a href="#contacto" class="boton-principal">Contáctame</a>
+      </div>
+      <img
+        src="logo.jpg"
+        alt="Escritorio de computador gamer con iluminación RGB y teclado mecánico"
+        class="imagen-inicio">
+    </section>
+
+   
+    <section id="sobre-mi" class="seccion-sobre-mi">
+      <h2>Sobre mí</h2>
+      <div class="contenedor-sobre-mi">
+        <img
+          src="balon.jpg"
+          alt="Balón de fútbol sobre el césped de una cancha"
+          class="imagen-sobre-mi">
+        <div class="texto-sobre-mi">
+          <p><strong>Edad:</strong> 23 años</p>
+          <p><strong>Educación:</strong> Estudiante activo de la Universidad Simón
+            Bolívar. Egresado del colegio Intemisol.</p>
+          <p><strong>Datos curiosos:</strong> Me gustan los videojuegos, el fútbol
+            y el ensamble/configuración de PCs.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="habilidades" class="seccion-habilidades">
+      <h2>Habilidades</h2>
+      <div id="contenedor-habilidades" class="contenedor-tarjetas"></div>
+    </section>
+
+    <section id="datos-curiosos" class="seccion-datos-curiosos">
+      <h2>Datos curiosos</h2>
+      <div id="contenedor-datos-curiosos" class="contenedor-tarjetas"></div>
+    </section>
+
+    
+    <section id="contacto" class="seccion-contacto">
+      <h2>Contáctame</h2>
+      <form id="formulario-contacto" class="formulario-contacto" novalidate>
+
+        <div class="grupo-campo">
+          <label for="campo-nombre">Nombre completo</label>
+          <input type="text" id="campo-nombre" name="nombre" required>
+        </div>
+
+        <div class="grupo-campo">
+          <label for="campo-correo">Correo electrónico</label>
+          <input type="email" id="campo-correo" name="correo" required>
+        </div>
+
+        <div class="grupo-campo">
+          <label for="campo-asunto">Asunto</label>
+          <select id="campo-asunto" name="asunto" required>
+            <option value="">Selecciona un asunto</option>
+            <option value="oferta-laboral">Oferta laboral</option>
+            <option value="proyecto">Propuesta de proyecto</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="grupo-campo">
+          <label for="campo-fecha">Fecha preferida de contacto</label>
+          <input type="date" id="campo-fecha" name="fecha">
+        </div>
+
+        <div class="grupo-campo grupo-checkbox">
+          <input type="checkbox" id="campo-aceptacion" name="aceptacion" required>
+          <label for="campo-aceptacion">Acepto ser contactado por este medio</label>
+        </div>
+
+        <button type="submit" class="boton-principal">Enviar mensaje</button>
+
+        <p id="mensaje-estado-formulario" class="mensaje-estado" role="status"></p>
+
+      </form>
+    </section>
+
+  </main>
+
+ 
+  <footer class="pie-pagina">
+    
+    <p>&copy; <span id="anio-actual"></span> Diego Andrés Pérez de la Hoz.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
